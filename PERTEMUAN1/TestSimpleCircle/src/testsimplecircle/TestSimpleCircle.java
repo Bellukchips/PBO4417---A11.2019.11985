@@ -19,13 +19,13 @@ public class TestSimpleCircle {
         SimpleCirlce circle1 = new SimpleCirlce();
         
         System.out.println("The area of circle1 of radius :"+circle1.radius + " is "+ circle1.getArea());
-        
+        System.out.println("Perimeter circle1 : "+circle1.getParimeter());
         SimpleCirlce circle2 = new SimpleCirlce(25);
         System.out.println("The area of circle2 of radius :"+circle2.radius + " is "+ circle2.getArea());
-         
+        System.out.println("Perimeter circle2 : "+circle2.getParimeter());
         SimpleCirlce circle3 = new SimpleCirlce(125);
         System.out.println("The area of circle3 of radius :"+circle3.radius + " is "+ circle3.getArea());
-         
+        System.out.println("Perimeter circle3 : "+circle3.getParimeter());
         //modify
         System.out.println("=======================");
         System.out.println("Modify radius circle 2");
