@@ -25,7 +25,7 @@ public class SimpleCirlce {
         return radius * radius * Math.PI;
     }
     public double getParimeter(){
-        return (2 * radius) * Math.PI;
+        return 2 * radius * Math.PI;
     }
     public double setRadius(double currentRadius){
         return radius = currentRadius;
