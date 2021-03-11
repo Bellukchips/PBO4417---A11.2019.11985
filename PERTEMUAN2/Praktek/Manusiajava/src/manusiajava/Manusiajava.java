@@ -40,6 +40,12 @@ public class Manusiajava {
         System.out.println("Owner   : "+tv1.getOwner());
         System.out.println("Total Tv: "+manusia1.getTotal());
         System.out.println("Status  : "+manusia1.checkTv());
+        
+        System.out.println("==============Sell TV=================");
+        manusia.sellTv(tv);
+        System.out.println("Tv dengan owner "+manusia.getName()+" Sudah dijual");
+        System.out.println("Total Tv: "+manusia.getTotal());
+        System.out.println("Status  : "+manusia.checkTv());
     }
     
 }

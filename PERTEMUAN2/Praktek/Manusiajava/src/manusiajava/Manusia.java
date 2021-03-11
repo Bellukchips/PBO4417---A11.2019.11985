@@ -41,8 +41,11 @@ public class Manusia {
         this.totalTv +=1;
         return tv;
     }
-    public void sellTv(){
-        
+    public Tv sellTv(Tv tv){
+        this.haveTv  = false;
+        this.totalTv = 0;
+
+        return tv;
     }
     public boolean checkTv(){
         return this.haveTv;
