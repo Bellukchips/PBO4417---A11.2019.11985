@@ -5,6 +5,8 @@
  */
 package mycar;
 
+import java.util.concurrent.TimeUnit;
+
 /**
  *
  * @author nothing
@@ -24,18 +26,24 @@ public class Car {
     public boolean startCar(){
        return this.power = true;
     }
-    public void turnOffCar(){
-        for (int j = this.transmision; j>= this.transmision; j--) {
-            System.out.println("Transmision : "+j);
-        }
+    public void turnOffCar() throws InterruptedException{
         this.power = false;
+        for (int j = this.transmision; j>= 1; j--) {
+            //add delay
+            TimeUnit.SECONDS.sleep(1);
+            System.out.println("Transmision : "+j+" Ngung...");
+        }
+        System.out.println("Status  : "+this.power);
+        
     }
     public void setTransmision(){
         this.transmision +=1;
     }
-    public void getTransmision(){
+    public void getTransmision() throws InterruptedException{
         for (int i = 1; i <= this.transmision; i++) {
-            System.out.println("Transmision : "+i);
+            //add delay
+            TimeUnit.SECONDS.sleep(1);
+            System.out.println("Transmision : "+i+" Ngung...");
         }
     }
     public boolean getStatusCar(){

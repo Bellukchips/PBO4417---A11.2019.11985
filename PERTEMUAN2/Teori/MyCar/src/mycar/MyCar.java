@@ -14,7 +14,7 @@ public class MyCar {
     /**
      * @param args the command line arguments
      */
-    public static void main(String[] args) {
+    public static void main(String[] args) throws InterruptedException {
         Car mCar = new Car();
         mCar.setColor("Blue");
         mCar.setProduction(1985);
@@ -22,14 +22,15 @@ public class MyCar {
         mCar.setTransmision();
         mCar.setTransmision();
         mCar.setTransmision();
+        mCar.setTransmision();
+        mCar.setTransmision();
+
         System.out.println("Color Car   : "+mCar.getColor());
         System.out.println("Production  : "+mCar.getProduction());
         System.out.println("Status Car  : "+mCar.getStatusCar());
         mCar.getTransmision();
+        System.out.println("===========Mulai Mematikan Mesin==========");
         mCar.turnOffCar();
-        System.out.println("Status Car  : "+mCar.getStatusCar());
-        mCar.getTransmision();
-    
     }
     
 }
