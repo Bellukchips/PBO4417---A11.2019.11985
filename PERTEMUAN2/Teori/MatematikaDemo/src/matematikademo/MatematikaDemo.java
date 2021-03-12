@@ -17,13 +17,13 @@ public class MatematikaDemo {
     public static void main(String[] args) {
         
         Matematika mtk = new Matematika();
-        mtk.add(2, 2);
+        mtk.add(20, 20);
         System.out.println("Hasil Penjumlahan   : "+mtk.getTotal());
-        mtk.subtraction(10, 2);
+        mtk.subtraction(10, 5);
         System.out.println("Hasil Pengurangan   : "+mtk.getTotal());
         mtk.devision(10, 2);
         System.out.println("Hasil Pembagian     : "+mtk.getTotal());
-        mtk.multiplication(10, 2);
+        mtk.multiplication(10, 20);
         System.out.println("Hasil Perkalian     : "+mtk.getTotal());
     }
     

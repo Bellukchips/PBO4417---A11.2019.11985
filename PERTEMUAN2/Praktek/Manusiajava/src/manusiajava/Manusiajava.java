@@ -16,15 +16,18 @@ public class Manusiajava {
      */
     public static void main(String[] args) {
         
-        //test no name
+        //test
         Manusia manusia = new Manusia("Lukman");
         Tv tv = new Tv();
-        tv.setMerk("LG");
-        tv.setOwner(manusia.getName());
+        tv.setMerk("LG");        
+        tv.setharga(150000);
+        tv.setMerk("SHARP");
+        manusia.buyTv(tv);
+        manusia.buyTv(tv);
         manusia.buyTv(tv);
         System.out.println("Nama    : "+manusia.getName());
         System.out.println("Merk tv : "+tv.getMerk());
-        System.out.println("Owner   : "+tv.getOwner());
+        System.out.println("Harga   : "+tv.getharga());
         System.out.println("Total Tv: "+manusia.getTotal());
         System.out.println("Status  : "+manusia.checkTv());
         
@@ -33,11 +36,11 @@ public class Manusiajava {
         Manusia manusia1 = new Manusia("Undertaker");
         Tv tv1 = new Tv();
         tv1.setMerk("SHARP");
-        tv1.setOwner(manusia1.getName());
+        tv1.setharga(120000);
         manusia1.buyTv(tv1);
         System.out.println("Nama    : "+manusia1.getName());
         System.out.println("Merk tv : "+tv1.getMerk());
-        System.out.println("Owner   : "+tv1.getOwner());
+        System.out.println("Harga   : "+tv1.getharga());
         System.out.println("Total Tv: "+manusia1.getTotal());
         System.out.println("Status  : "+manusia1.checkTv());
         

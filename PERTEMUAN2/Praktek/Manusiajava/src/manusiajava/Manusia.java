@@ -17,7 +17,7 @@ public class Manusia {
     private String name;
     private boolean haveTv;
     private int totalTv = 0;    
-   
+    public String myTv;
     
     //constructor
     Manusia(){
@@ -27,7 +27,7 @@ public class Manusia {
     Manusia(String name){
         this.name = name;
     }
-
+    //method
      public String getName() {
         return name;
     }
@@ -36,7 +36,6 @@ public class Manusia {
         this.name = name;
     }
     public Tv buyTv(Tv tv){
-       
         this.haveTv = true;
         this.totalTv +=1;
         return tv;

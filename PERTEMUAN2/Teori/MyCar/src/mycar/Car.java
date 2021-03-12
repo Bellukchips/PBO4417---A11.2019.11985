@@ -43,7 +43,12 @@ public class Car {
         for (int i = 1; i <= this.transmision; i++) {
             //add delay
             TimeUnit.SECONDS.sleep(1);
-            System.out.println("Transmision : "+i+" Ngung...");
+            if(i == 1){
+                System.out.println("Transmision : "+i);
+            }else{
+               System.out.println("Transmision : "+i+" Ngung...");  
+            }
+           
         }
     }
     public boolean getStatusCar(){
