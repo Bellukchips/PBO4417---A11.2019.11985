@@ -22,7 +22,7 @@ public class GamesDemo {
         player.Run();
         player.Run(30);
         System.out.println("Player width "+player.getWidth());
-        System.out.println("Player heigth "+player.getHeight());
+        System.out.println("Player height "+player.getHeight());
         System.out.println("Player Position X: "+player.getX()+" Position Y: "+player.getY());
         
         GameEnemy enemy = new GameEnemy();
@@ -30,7 +30,7 @@ public class GamesDemo {
         enemy.setPosition(3, 4);
         enemy.Run();
         System.out.println("Enemy width "+enemy.getWidth());
-        System.out.println("Enemy heigth "+enemy.getHeight());
+        System.out.println("Enemy height "+enemy.getHeight());
         System.out.println("Enemy Position X: "+enemy.getX()+" Position Y: "+enemy.getY());
         
     }
