@@ -24,7 +24,10 @@ public class GameEnvironment {
 
     //contructor
     GameEnvironment(){}
-    GameEnvironment(double width, double height){}
+    GameEnvironment(double width, double height){
+    	this.width = width;
+    	this.height = height;
+    }
     
     //function
     public void addPlayer(GamePlayer player){
