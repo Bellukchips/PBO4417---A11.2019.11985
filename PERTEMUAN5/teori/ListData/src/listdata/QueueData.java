@@ -13,18 +13,18 @@ import java.util.Queue;
  * @author nothing
  */
 public class QueueData extends VehicleMerk {
-    private final Queue<VehicleMerk> merk = new LinkedList<>();
+    private final Queue<VehicleMerk> merk = new LinkedList<VehicleMerk>();
     
     QueueData(){
         
     }
     
-    public void addData(VehicleMerk merk){
-        this.merk.add(merk);
+    public boolean addData(VehicleMerk merk){
+        return this.merk.add(merk);
     }
     
-    public void removeData(VehicleMerk merk){
-        this.merk.remove(merk);
+    public boolean removeData(VehicleMerk merk){
+        return this.merk.remove(merk);
     }
     
     public void fetchData(){
@@ -32,6 +32,14 @@ public class QueueData extends VehicleMerk {
          for (int i = 0; i < merk.size(); i++) {;
              System.out.println(merk.element().getMerk());
         };
+    }
+    public void size(){
+        VehicleMerk head = this.merk.peek();
+        System.out.println("head of queue-"
+                           + head);
+         int size = merk.size();
+        System.out.println("Size of queue-"
+                           + size);
     }
     public void pollData(){
         VehicleMerk peekmerk = this.merk.poll();

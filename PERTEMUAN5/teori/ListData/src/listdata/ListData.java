@@ -72,13 +72,14 @@ public class ListData {
         System.out.println("");
         System.out.println("===Queue Data===");
         QueueData queue = new QueueData();
+        
         queue.addData(vehicle);
         queue.addData(vehicle1);
         queue.addData(vehicle2);
         queue.addData(vehicle3);
         queue.fetchData();
         
-        //remove queue
+//        //remove queue
         queue.removeData(vehicle1);
         System.out.println("===After Remove queue");
         queue.fetchData();
@@ -87,5 +88,7 @@ public class ListData {
         queue.pollData();
         System.out.println("===After Poll queue");
         queue.fetchData();
+        
+        queue.size();
     }   
 }
