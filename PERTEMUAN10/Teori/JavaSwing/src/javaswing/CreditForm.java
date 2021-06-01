@@ -29,7 +29,7 @@ public class CreditForm extends javax.swing.JFrame {
     private void initComponents() {
 
         jLabel1 = new javax.swing.JLabel();
-        lbl_output = new javax.swing.JLabel();
+        lbl_nama = new javax.swing.JLabel();
         btn_back = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -41,7 +41,7 @@ public class CreditForm extends javax.swing.JFrame {
 
         jLabel1.setText("CREDIT");
 
-        lbl_output.setText("Label");
+        lbl_nama.setText("Label");
 
         btn_back.setText("Kembali Ke Menu");
         btn_back.addActionListener(new java.awt.event.ActionListener() {
@@ -60,7 +60,7 @@ public class CreditForm extends javax.swing.JFrame {
                         .addGap(170, 170, 170)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jLabel1)
-                            .addComponent(lbl_output)))
+                            .addComponent(lbl_nama)))
                     .addGroup(layout.createSequentialGroup()
                         .addGap(129, 129, 129)
                         .addComponent(btn_back)))
@@ -71,9 +71,9 @@ public class CreditForm extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addGap(37, 37, 37)
                 .addComponent(jLabel1)
-                .addGap(46, 46, 46)
-                .addComponent(lbl_output)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 76, Short.MAX_VALUE)
+                .addGap(30, 30, 30)
+                .addComponent(lbl_nama)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 92, Short.MAX_VALUE)
                 .addComponent(btn_back)
                 .addGap(73, 73, 73))
         );
@@ -88,7 +88,7 @@ public class CreditForm extends javax.swing.JFrame {
     }//GEN-LAST:event_btn_backActionPerformed
 
     private void formWindowActivated(java.awt.event.WindowEvent evt) {//GEN-FIRST:event_formWindowActivated
-       lbl_output.setText(label);
+       lbl_nama.setText(label);
     }//GEN-LAST:event_formWindowActivated
 
     /**
@@ -129,6 +129,6 @@ public class CreditForm extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btn_back;
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel lbl_output;
+    private javax.swing.JLabel lbl_nama;
     // End of variables declaration//GEN-END:variables
 }
